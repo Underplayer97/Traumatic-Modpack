@@ -1,5 +1,7 @@
 {
-"item.traumaticbosses.traumatic_blade": "Traumatic Blade",
+  "item.traumaticbosses.traumatic_blade": "Traumatic Blade",
+  "item.traumaticbosses.traumatic_guillotine": "Traumatic Guillotine",
+  "item.traumaticbosses.traumatic_scythe": "Traumatic Scythe",
 
-"block.traumaticbosses.tungsten_ore": "Tungsten Ore"
+  "block.traumaticbosses.tungsten_ore": "Tungsten Ore"
 }
