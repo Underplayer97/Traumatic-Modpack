@@ -15,12 +15,18 @@ public class ModBlocks {
 
 		//Blocks
 		Registry.register(Registries.BLOCK, new Identifier("traumaticbosses", "tungsten_ore"), TUNGSTEN_ORE);
+		Registry.register(Registries.BLOCK, new Identifier("traumaticbosses", "deepslate_tungsten_ore"), DEEPSLATE_TUNGSTEN_ORE);
+
 
 		//Items
 		Registry.register(Registries.ITEM, new Identifier("traumaticbosses", "tungsten_ore"), new BlockItem(TUNGSTEN_ORE, new QuiltItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("traumaticbosses", "deepslate_tungsten_ore"), new BlockItem(DEEPSLATE_TUNGSTEN_ORE, new QuiltItemSettings()));
+
 	}
 
 	//Block Settings
-public static final Block TUNGSTEN_ORE = new Block(QuiltBlockSettings.create().strength(4.0f).requiresTool());
+	public static final Block TUNGSTEN_ORE = new Block(QuiltBlockSettings.create().strength(4.0f).requiresTool());
+	public static final Block DEEPSLATE_TUNGSTEN_ORE = new Block(QuiltBlockSettings.create().strength(4.0f).requiresTool());
+
 
 }

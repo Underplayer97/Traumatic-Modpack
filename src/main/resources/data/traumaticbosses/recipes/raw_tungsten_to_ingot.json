@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "traumaticbosses:raw_tungsten"
+  },
+  "result": "traumaticbosses:tungsten_ingot",
+  "experience": 2,
+  "cookingtime": 250
+}

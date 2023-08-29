@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "traumaticbosses:raw_tungsten"
+  },
+  "result": "traumaticbosses:tungsten_ingot",
+  "experience": 0.7,
+  "cookingtime": 150
+}

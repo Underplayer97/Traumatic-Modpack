@@ -2,6 +2,9 @@
   "item.traumaticbosses.traumatic_blade": "Traumatic Blade",
   "item.traumaticbosses.traumatic_guillotine": "Traumatic Guillotine",
   "item.traumaticbosses.traumatic_scythe": "Traumatic Scythe",
+  "item.traumaticbosses.raw_tungsten": "Raw Tungsten",
+  "item.traumaticbosses.tungsten_ingot": "Tungsten Ingot",
 
-  "block.traumaticbosses.tungsten_ore": "Tungsten Ore"
+  "block.traumaticbosses.tungsten_ore": "Tungsten Ore",
+  "block.traumaticbosses.deepslate_tungsten_ore": "Deepslate Tungsten Ore"
 }
