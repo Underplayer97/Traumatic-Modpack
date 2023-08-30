@@ -1,0 +1,82 @@
+package net.underplayer97.traumaticbosses.common.item;
+
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+import net.underplayer97.traumaticbosses.BossMain;
+
+
+import java.util.function.Supplier;
+
+public enum ModArmorMaterial implements ArmorMaterial {
+	TUNGSTEN("tungsten",25,new int[] {3,8,6,3}, 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f,0.1f,
+		() -> Ingredient.ofItems(ModItems.TUNGSTEN_INGOT))
+	;
+
+	private final String name;
+	private final int durabilityMultiplier;
+	private final int[] protectionAmounts;
+	private final int enchantability;
+	private final SoundEvent equipSound;
+	private final float toughness;
+	private final float knockbackRessistance;
+	private final Supplier<Ingredient> repairIngredient;
+
+	private static final int[] BASE_DURABILITY = {11, 16, 15, 13};
+
+	ModArmorMaterial(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
+					 float toughness, float knockbackRessistance, Supplier<Ingredient> repairIngredient) {
+		this.name = name;
+		this.durabilityMultiplier = durabilityMultiplier;
+		this.protectionAmounts = protectionAmounts;
+		this.enchantability = enchantability;
+		this.equipSound = equipSound;
+		this.toughness = toughness;
+		this.knockbackRessistance = knockbackRessistance;
+		this.repairIngredient = repairIngredient;
+	}
+
+
+	@Override
+	public int getDurability(ArmorItem.ArmorSlot slot) {
+		return BASE_DURABILITY[slot.ordinal()] * this.durabilityMultiplier;
+	}
+
+	@Override
+	public int getProtection(ArmorItem.ArmorSlot slot) {
+		return protectionAmounts[slot.ordinal()];
+	}
+
+	@Override
+	public int getEnchantability() {
+		return this.enchantability;
+	}
+
+	@Override
+	public SoundEvent getEquipSound() {
+		return this.equipSound;
+	}
+
+	@Override
+	public Ingredient getRepairIngredient() {
+		return this.repairIngredient.get();
+	}
+
+	@Override
+	public String getName() {
+		return BossMain.MOD_ID + ":" + this.name;
+	}
+
+	@Override
+	public float getToughness() {
+		return this.toughness;
+	}
+
+	@Override
+	public float getKnockbackResistance() {
+		return this.knockbackRessistance;
+	}
+
+}

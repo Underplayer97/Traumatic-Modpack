@@ -16,6 +16,7 @@ public class BossMain implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		ModItems.init();
 		ModBlocks.init();
+
 		//LOGGER.info("Hello Quilt world from {}!", mod.metadata().name());
 	}
 }

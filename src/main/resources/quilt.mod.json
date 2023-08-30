@@ -18,7 +18,10 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "net.underplayer97.traumaticbosses.BossMain"
+			"init": "net.underplayer97.traumaticbosses.BossMain",
+			"fabric-datagen": [
+				"net.underplayer97.traumaticbosses.ModDataGenerator"
+			]
 		},
 		"depends": [
 			{
