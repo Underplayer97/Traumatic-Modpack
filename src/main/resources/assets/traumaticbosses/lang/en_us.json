@@ -6,5 +6,8 @@
   "item.traumaticbosses.tungsten_ingot": "Tungsten Ingot",
 
   "block.traumaticbosses.tungsten_ore": "Tungsten Ore",
-  "block.traumaticbosses.deepslate_tungsten_ore": "Deepslate Tungsten Ore"
+  "block.traumaticbosses.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+
+  "itemGroup.traumaticbosses.item_group": "Traumatic Items",
+  "itemGroup.traumaticbosses.block_group": "Traumatic Blocks"
 }

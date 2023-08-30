@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class BossMain implements ModInitializer {
 
+	public static final String MOD_ID = "traumaticbosses";
 	public static final Logger LOGGER = LoggerFactory.getLogger("Traumatic Bosses");
 
 	@Override
