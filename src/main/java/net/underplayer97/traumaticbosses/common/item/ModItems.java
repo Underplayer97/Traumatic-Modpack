@@ -1,11 +1,6 @@
 package net.underplayer97.traumaticbosses.common.item;
 
-import com.google.common.collect.ImmutableMap;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,8 +9,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.underplayer97.traumaticbosses.BossMain;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
-
-import java.util.Map;
 
 public class ModItems {
 
