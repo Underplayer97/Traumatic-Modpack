@@ -15,6 +15,8 @@
 
   "block.traumaticbosses.tungsten_ore": "Tungsten Ore",
   "block.traumaticbosses.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "block.traumaticbosses.tungsten_block": "Tungsten Block",
+  "block.traumaticbosses.upg_smithing": "Upgraded Smithing",
 
   "itemGroup.traumaticbosses.item_group": "Traumatic Items",
   "itemGroup.traumaticbosses.block_group": "Traumatic Blocks"

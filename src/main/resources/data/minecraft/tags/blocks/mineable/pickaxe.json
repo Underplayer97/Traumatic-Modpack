@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "traumaticbosses:tungsten_ore",
-    "traumaticbosses:deepslate_tungsten_ore"
+    "traumaticbosses:deepslate_tungsten_ore",
+    "traumaticbosses:tungsten_block"
   ]
 }

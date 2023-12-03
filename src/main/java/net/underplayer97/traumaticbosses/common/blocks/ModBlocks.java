@@ -21,11 +21,15 @@ public class ModBlocks {
 		//Blocks
 		Registry.register(Registries.BLOCK, new Identifier(BossMain.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE);
 		Registry.register(Registries.BLOCK, new Identifier(BossMain.MOD_ID, "deepslate_tungsten_ore"), DEEPSLATE_TUNGSTEN_ORE);
+		Registry.register(Registries.BLOCK, new Identifier(BossMain.MOD_ID, "tungsten_block"), TUNGSTEN_BLOCK);
+		Registry.register(Registries.BLOCK, new Identifier(BossMain.MOD_ID, "upg_smithing"), UPG_SMITHING);
 
 
 		//Items
 		Registry.register(Registries.ITEM, new Identifier(BossMain.MOD_ID, "tungsten_ore"), new BlockItem(TUNGSTEN_ORE, new QuiltItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier(BossMain.MOD_ID, "deepslate_tungsten_ore"), new BlockItem(DEEPSLATE_TUNGSTEN_ORE, new QuiltItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(BossMain.MOD_ID, "tungsten_block"), new BlockItem(TUNGSTEN_BLOCK, new QuiltItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier(BossMain.MOD_ID, "upg_smithing"), new BlockItem(UPG_SMITHING, new QuiltItemSettings()));
 
 		//Register Group
 		Registry.register(Registries.ITEM_GROUP, new Identifier(BossMain.MOD_ID, "block_group"), BLOCK_GROUP);
@@ -35,6 +39,8 @@ public class ModBlocks {
 	//Block Settings
 	public static final Block TUNGSTEN_ORE = new Block(QuiltBlockSettings.create().strength(4.0f).requiresTool());
 	public static final Block DEEPSLATE_TUNGSTEN_ORE = new Block(QuiltBlockSettings.create().strength(4.0f).requiresTool());
+	public static final Block TUNGSTEN_BLOCK = new Block(QuiltBlockSettings.create().strength(4.0f).requiresTool());
+	public static final Block UPG_SMITHING = new Block(QuiltBlockSettings.create().strength(3.0f).requiresTool());
 
 	//Group Registry
 	private static final ItemGroup BLOCK_GROUP = FabricItemGroup.builder()
@@ -44,6 +50,8 @@ public class ModBlocks {
 			// entries.addItem(ModBlocks.); <-- PLACEHOLDER
 			entries.addItem(ModBlocks.TUNGSTEN_ORE);
 			entries.addItem(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+			entries.addItem(ModBlocks.TUNGSTEN_BLOCK);
+			entries.addItem(ModBlocks.UPG_SMITHING);
 		})
 		.build();
 }

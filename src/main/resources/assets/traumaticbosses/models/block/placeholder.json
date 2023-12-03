@@ -1,0 +1,19 @@
+{
+  "parent": "block/orientable",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [ 0, 135, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.40, 0.40, 0.40 ]
+    }
+  },
+  "textures": {
+    "top": "traumaticbosses:block/blank",
+    "bottom": "traumaticbosses:block/blank",
+    "north": "traumaticbosses:block/placeholder-2",
+    "east": "traumaticbosses:block/placeholder-1",
+    "south": "traumaticbosses:block/placeholder-2",
+    "west": "traumaticbosses:block/placeholder-1",
+    "particle": "traumaticbosses:block/blank"
+  }
+}
